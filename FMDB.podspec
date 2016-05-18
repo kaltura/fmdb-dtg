@@ -31,7 +31,6 @@ Pod::Spec.new do |s|
 
   # use a custom built version of sqlite3
   s.subspec 'standalone' do |ss|
-    ss.default_subspec = 'default'
     ss.dependency 'FMDB/common'
     
     ss.subspec 'default' do |sss|
