@@ -32,14 +32,7 @@ Pod::Spec.new do |s|
   # use a custom built version of sqlite3
   s.subspec 'standalone' do |ss|
     ss.dependency 'FMDB/common'
-
-    # add FTS, custom FTS tokenizer source files, and unicode61 tokenizer support
-    ss.subspec 'FTS' do |sss|
-      sss.source_files = 'src/extra/fts3/*.{h,m}'
-      sss.dependency 'sqlite3/unicode61'
-      sss.private_header_files = 'src/extra/fts3/fts3_tokenizer.h'
     end
-  end
 
   # use SQLCipher and enable -DSQLITE_HAS_CODEC flag
   s.subspec 'SQLCipher' do |ss|
