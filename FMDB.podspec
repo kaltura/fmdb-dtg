@@ -32,10 +32,6 @@ Pod::Spec.new do |s|
   # use a custom built version of sqlite3
   s.subspec 'standalone' do |ss|
     ss.dependency 'FMDB/common'
-    
-    ss.subspec 'default' do |sss|
-      sss.dependency 'sqlite3'
-    end
 
     # add FTS, custom FTS tokenizer source files, and unicode61 tokenizer support
     ss.subspec 'FTS' do |sss|
