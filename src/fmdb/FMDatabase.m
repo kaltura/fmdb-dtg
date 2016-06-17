@@ -2,6 +2,7 @@
 #import "unistd.h"
 #import <objc/runtime.h>
 #import "FMDatabase+Private.h"
+#import <sqlite3.h>
 
 @interface FMDatabase ()
 

@@ -9,10 +9,13 @@
 #ifndef deleteme2_FMDatabase_Private_h
 #define deleteme2_FMDatabase_Private_h
 
-#import <sqlite3.h>
 
 @class FMDatabase;
 @class FMStatement;
+
+typedef struct sqlite3 sqlite3;
+typedef struct sqlite3_stmt sqlite3_stmt;
+
 
 @interface FMDatabase (Private)
 

@@ -9,6 +9,7 @@
 #import "FMDatabasePool.h"
 #import "FMDatabase.h"
 #import "FMDatabase+Private.h"
+#import <sqlite3.h>
 
 @interface FMDatabasePool()
 

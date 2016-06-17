@@ -2,6 +2,7 @@
 #import "FMDatabase.h"
 #import "unistd.h"
 #import "FMDatabase+Private.h"
+#import <sqlite3.h>
 
 @interface FMDatabase ()
 - (void)resultSetDidClose:(FMResultSet *)resultSet;
